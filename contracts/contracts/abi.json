@@ -1,0 +1,19 @@
+[
+  "function uploadRecord(string calldata usn, string calldata name, string calldata program, string calldata cid) external",
+  "function verifyRecord(string calldata usn) external",
+  "function getRecord(string calldata usn) external view returns (tuple(string usn, string name, string program, string cid, uint256 timestamp, address uploader, bool verified))",
+  "function getRecordCount() external view returns (uint256)",
+  "function getRecordHashAtIndex(uint256 index) external view returns (bytes32)",
+  "function getRecordByHash(bytes32 usnHash) external view returns (tuple(string usn, string name, string program, string cid, uint256 timestamp, address uploader, bool verified))",
+  "function setUploaderRole(address account) external",
+  "function setVerifierRole(address account) external",
+  "function setEmployerRole(address account) external",
+  "event RecordUploaded(string indexed usn, string cid, address indexed uploader, uint256 timestamp)",
+  "event RecordVerified(string indexed usn, address indexed verifier, uint256 timestamp)"
+]
+
+
+
+
+
+
