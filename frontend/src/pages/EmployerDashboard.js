@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
+// eslint-disable-next-line no-unused-vars
 import { useAuth } from '../context/AuthContext';
 import axios from 'axios';
 
@@ -6,6 +7,7 @@ const EmployerDashboard = () => {
   const [records, setRecords] = useState([]);
   const [loading, setLoading] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
+  // eslint-disable-next-line no-unused-vars
   const [activeTab, setActiveTab] = useState('blockchain'); // 'blockchain' or 'database'
   const [message, setMessage] = useState('');
 
